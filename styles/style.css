@@ -1,0 +1,169 @@
+/* Color variables */
+:root {
+    --white-color: #fff;
+    --bg-color: #fff;
+    --gray-color: #ccc;
+  }
+  
+  /* Changing background color */
+  body {
+    background: var(--bg-color) !important;
+  }
+  
+  /* Changing link color */
+  .nav-item .nav-link {
+    color: var(--white-color);
+  }
+  
+  /* Hero section background image */
+  .hero {
+    height: 100vh;
+    background-color: rgb(8, 172, 76);
+    background-repeat: no-repeat;
+    background-position: 60% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #skills i {
+    height: 100px;
+    width: 100px;
+  }
+  
+  #portfolio img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  #about .img,
+  #about img,
+  .hire-text h2 {
+    position: relative;
+  }
+  
+  /* Timeline background line */
+  #about .img::before {
+    content: "";
+    left: 50%;
+    width: 4px;
+    position: absolute;
+    height: calc(100% + 140px);
+    background: var(--gray-color);
+  }
+  
+  #about img,
+  #about .hire-text h2 {
+    width: 140px;
+  }
+  
+  #about .hire-text h2 {
+    height: 140px;
+  }
+  
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+
+#card:hover{
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+  
+  #cv img {
+    width: 230px;
+  }
+  
+  /* Contact section background image */
+  #contact {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("../images/contact-bg.jpeg");
+  }
+  
+  @media screen and (max-width: 990px) {
+    #skills .card {
+      width: calc(100% / 2 - 10px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 668px) {
+    #skills .card,
+    #portfolio .card-wrapper {
+      width: 100% !important;
+    }
+   #about .hire-text h2 {
+     height: 70px;
+     width: 70px;
+   }
+  }
+   
+  #cupom {
+    background-color: rgb(8, 172, 76);
+    padding: 4rem;
+    text-align: center;
+  }
+  
+  #cupom .texto {
+    color: white;
+  }
+  
+  #cupom .texto h2 {
+    margin: 2rem;
+    font-size: 1.76471rem;
+  }
+  
+  #cupom .input {
+    margin: 0 auto;
+    width: 575px;
+    border-radius: 20px;
+    border: 4px solid white;
+    background: white;
+  }
+  
+  #cupom .input input {
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    width: 540px;
+    outline: none;
+    text-align: center;
+    font-size: 26px;
+  }
+  
+  #cupom .input:hover, #cupom .input:focus-within {
+    -webkit-box-shadow: 1px 1px 8px 1px #495371;
+            box-shadow: 1px 1px 8px 1px #495371;
+    outline: none;
+  }
+  
+  #cupom button {
+    text-transform: uppercase;
+    margin-top: .75rem;
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    background-color: #5b637a;
+    color: rgb(8, 172, 76);
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px #495371;
+    border-radius: 40px;
+  }
+  
+  #cupom button:hover {
+    color: #495371;
+    background-color: #74959A;
+    border-color: #F1E0AC;
+  }
+  
